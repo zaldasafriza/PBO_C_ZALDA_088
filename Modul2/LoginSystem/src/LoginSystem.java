@@ -1,47 +1,5 @@
 import java.util.Scanner;
 
-class Admin {
-    private String username;
-    private String password;
-
-    public Admin(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
-
-    public void login(String inputUsername, String inputPassword) {
-        if (inputUsername.equals(username) && inputPassword.equals(password)) {
-            System.out.println("Login Admin berhasil!");
-        } else {
-            System.out.println("Username atau password salah!");
-        }
-    }
-}
-
-class Mahasiswa {
-    private String nama;
-    private String nim;
-
-    public Mahasiswa(String nama, String nim) {
-        this.nama = nama;
-        this.nim = nim;
-    }
-
-    public void login(String inputNama, String inputNim) {
-        if (inputNama.equals(nama) && inputNim.equals(nim)) {
-            System.out.println("Login Mahasiswa berhasil!");
-            System.out.println(displayInfo());
-        } else {
-            System.out.println("Nama atau NIM salah!");
-        }
-    }
-
-    public String displayInfo() {
-        return "Nama: " + nama + ", NIM: " + nim;
-    }
-}
-
-
 public class LoginSystem {
     private Admin admin;
     private Mahasiswa mahasiswa;
